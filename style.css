@@ -1,4 +1,4 @@
-body{
+/* body{
     background-color: black;
     font-family: sans-serif;
 }
@@ -53,7 +53,7 @@ button{
   }
   
   .task:hover {
-    transform: translateX(-20px); /* Slide to left on hover */
+    transform: translateX(-20px); Slide to left on hover 
   }
   
   .delete-btn {
@@ -70,4 +70,103 @@ button{
   
   .task:hover .delete-btn {
     display: inline-block;
-  }
+  } */
+
+
+  body {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/033/713/194/non_2x/old-paper-textures-perfect-background-with-space-for-text-or-image-newspaper-paper-grunge-vintage-old-aged-texture-background-ai-generated-free-photo.jpg');
+    background-size: cover;
+    font-family: 'Georgia', serif;
+    color: #3e2723; /* Dark brown color for text */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85); /* Slightly transparent to show background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+}
+
+input {
+    width: 270px;
+    padding: 10px;
+    border: 2px solid #8d6e63; /* Softer brown border */
+    outline: none;
+    background-color: #faf3e0; /* Light paper-like background */
+}
+
+button {
+    width: 70px;
+    height: 45px;
+    background-color: #8d6e63; /* Softer brown color */
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6d4c41; /* Darker brown on hover */
+}
+
+.text ul {
+    position: relative;
+    background-color: rgba(158, 126, 102, 0.7); /* Vintage earthy background */
+    color: white;
+    font-size: 19px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.text ul i {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #e57373;
+}
+
+.text {
+    margin-top: 25px;
+}
+
+.task {
+    list-style: none;
+    padding: 12px;
+    margin: 10px 0;
+    background-color: #faf3e0;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.task:hover {
+    transform: translateX(-20px); /* Slide to the left on hover */
+    background-color: #f5e1c3; /* Change to a slightly darker paper color */
+}
+
+.delete-btn {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #e57373;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.task:hover .delete-btn {
+    display: inline-block;
+}
